@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excellab - Produtos e Equipamentos Laboratoriais Ltda.</title>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+
+
+  <!-- Ícone da página -->
+  <link rel="icon" href="assets\iconeweb.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <!-- HEADER -->
+  <div class="bg-home">
+    <header>
+      <nav class="header-content container" id="menu-nav">
+        <!-- Logo -->
+        <img src="assets\iconeweb.png" alt="Logo da Excellab" />
+
+
+        <!-- Ícones de redes sociais -->
+        <div class="header-icons" data-aos="fade-down">
+          <a href="https://www.instagram.com/excellab_sp/ ">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-whatsapp fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+
+        <div class="nav-buttons">
+          <a href="index.html" class="button-contact">Home</a>
+          <a href="produtos.html" class="button-contact">Produtos</a>
+          <a href="#" class="button-contact">Sobre</a>
+          <a href="#" class="button-contact">Contato</a>
+        </div>
+        <button class="toggle-btn">&#9776;</button>
+       
+        <div class="burger-container" data-aos="fade-down">
+          
+          
+          
+        </div>
+      </nav>
+        <img src="assets/fundocomeco.jpg ">
+
+    <div class="container" id="fale-conosco">
+        <h1 id="h1-2">ENTRE EM CONTATO CONOSCO</h1>
+        <p id="h1-2">Tire todas as suas dúvidas ou envie suas sugestões para nossa equipe.</p>
+        <form action="mailto:contato@excellab.com.br" method="post" enctype="text/plain">
+            <label for="name">Nome *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="domain">Motivo do Contato</label>
+            <input type="text" id="domain" name="domain">
+
+            <label for="message">Mensagem *</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="ENVIAR">
+        </form>
+    </div>
+    <footer class="footer">
+        <p>
+          <span id="endereco">Rua Coperema, 421 - Jardim Jaú</span><br>
+          <span id="cidade">São Paulo - SP   CEP 03713-040</span><br>
+          <span id="telefone">Tel: (11) 2082-1402 /  (11) 4105-5354  /  Cel: (11) 97363-3736</span><br>
+          <span id="email">Email: assessoria@excellab.com.br</span>
+        </p>
+      
+        <!-- Ícones de redes sociais no rodapé -->
+        <div class="footer-icons">
+          <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        </div>
+    
+        <!-- Logo no rodapé -->
+        <div>
+          <img src="assets\EXCL-OLCN.png" alt="Logo Excellab" />
+        </div>
+        
+    
+        <!-- Informação de copyright -->
+        <p>© 2024 Excellab - Produtos e Equipamentos Laboratoriais LTDA.</p>
+      </footer>
+    
+      <!-- Botão do WhatsApp -->
+      <a href="https://api.whatsapp.com/send?phone=5511930232945&text=Ola%20gostaria%20de%20mais%20informações." class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+        <img src="assets/whatssapp.svg" alt="Botão whatsapp" />
+        <span class="tooltip-text">Fale Conosco</span>
+      </a>
+
+      <!-- Scripts -->
+      <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleBtn = document.querySelector('.toggle-btn');
+      const navButtons = document.querySelector('.nav-buttons');
+    
+      toggleBtn.addEventListener('click', function () {
+        navButtons.style.display = (navButtons.style.display === 'none' || navButtons.style.display === '') ? 'flex' : 'none';
+      });
+    
+    
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 600) {
+          navButtons.style.display = 'flex';
+        } else {
+          navButtons.style.display = 'none';
+        }
+      });
+      document.addEventListener('DOMContentLoaded', function () {
+      const toggleBtn = document.querySelector('.toggle-btn');
+      const navButtons = document.querySelector('.nav-buttons');
+      const logo = document.querySelector('.logo');
+      const logoSmall = document.querySelector('.logo-small');
+    
+      toggleBtn.addEventListener('click', function () {
+        navButtons.style.display = (navButtons.style.display === 'none' || navButtons.style.display === '') ? 'flex' : 'none';
+      });
+    
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 600) {
+          navButtons.style.display = 'flex';
+          logo.style.display = 'block';
+          logoSmall.style.display = 'none';
+        } else {
+          navButtons.style.display = 'none';
+          logo.style.display = 'none';
+          logoSmall.style.display = 'block';
+        }
+      });
+      document.getElementById('endereco').addEventListener('click', function() {
+      window.open('https://www.google.com/maps?q=Rua+Coperema,421-Jardim+Jau,Sao+Paulo,SP+CEP:03713-040');
+    });
+    
+    document.getElementById('telefone').addEventListener('click', function() {
+      var telefoneNumeros = '1120821402,1141055354,11973633736';
+      window.open('tel:' + telefoneNumeros);
+    });
+    
+    document.getElementById('email').addEventListener('click', function() {
+      window.location.href = 'mailto:assessoria@excellab.com.br';
+    });
+    
+    });
+    
+    });
+    
+      </script>
+      
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>
